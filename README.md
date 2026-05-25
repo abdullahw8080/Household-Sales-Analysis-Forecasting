@@ -193,32 +193,6 @@
 └─────────────────────────────────────────────────┘
 ```
 
----
-
-## 📁 هيكل المشروع
-
-```
-Household-Sales-Analysis-Forecasting/
-│
-├── 📂 SQL/
-│   ├── data_cleaning.sql
-│   ├── kpi_queries.sql
-│   └── joins_aggregations.sql
-│
-├── 📂 PowerBI/
-│   ├── Dashboard_Sales.pbix
-│   └── screenshots/
-│
-├── 📂 Python/
-│   ├── forecasting_model.py       # Holt-Winters Model (دقة 93%)
-│   ├── feature_importance.py      # AI Insights
-│   └── visualizations.py
-│
-├── 📂 Data/
-│   └── sales_data_cleaned.csv
-│
-└── README.md
-```
 
 ---
 
