@@ -1,71 +1,258 @@
-Household Appliances Sales Analysis & Forecasting (2023 - 2026)
-تحليل وتنبؤ مبيعات المستلزمات المنزلية (2023 - 2026)
-📝 Project Overview | نظرة عامة على المشروع
-EN: This project provides a comprehensive strategic analysis of sales performance for a household appliances company. By integrating SQL for data extraction, Power BI for interactive visualization, and Python for advanced AI forecasting, the project uncovers deep business insights from over 2,600 sales transactions and predicts future trends for 2026.
-AR: يقدم هذا المشروع تحليلاً استراتيجياً شاملاً لأداء مبيعات شركة مستلزمات منزلية. من خلال دمج SQL لاستخراج البيانات، و Power BI للتصور التفاعلي، و Python للتنبؤ المتقدم باستخدام الذكاء الاصطناعي، يكشف المشروع عن رؤى أعمال عميقة من واقع أكثر من 2600 عملية بيع ويتنبأ بالاتجاهات المستقبلية لعام 2026.
+<div align="center">
 
-🚀 Key Features | المميزات الرئيسية
-End-to-End Data Pipeline: From raw data in SQL to a polished Power BI Dashboard.
-(مسار بيانات متكامل: من البيانات الخام في SQL وصولاً إلى لوحة تحكم Power BI احترافية).
-AI-Powered Forecasting: Predicting sales for 29 different products using the Holt-Winters Exponential Smoothing model.
-(تنبؤ مدعوم بالذكاء الاصطناعي: التنبؤ بمبيعات 29 منتجاً مختلفاً باستخدام نموذج Holt-Winters).
+# 🏆 نظام تحليل وتنبؤ مبيعات المستلزمات المنزلية
+### Household Sales Analysis & Forecasting System (2023–2026)
 
-Business Intelligence: 6 detailed Dashboard pages with 20+ interactive visualizations.
-(ذكاء الأعمال: 6 صفحات لوحة تحكم تفصيلية تحتوي على أكثر من 20 رسماً بيانياً تفاعلياً).
+[![Best Project Award](https://img.shields.io/badge/🥇%20أفضل%20مشروع-دفعة%202026-FFD700?style=for-the-badge)](https://github.com/abdullahw8080/Household-Sales-Analysis-Forecasting)
+[![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
+[![Power BI](https://img.shields.io/badge/Power%20BI-DAX-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)](https://powerbi.microsoft.com)
+[![MySQL](https://img.shields.io/badge/MySQL-8.0-4479A1?style=for-the-badge&logo=mysql&logoColor=white)](https://mysql.com)
+[![License](https://img.shields.io/badge/License-MIT-22C55E?style=for-the-badge)](LICENSE)
 
-Employee Performance Tracking: Analyzing sales representative efficiency and target achievement.
-(تتبع أداء الموظفين: تحليل كفاءة مندوبي المبيعات ومدى تحقيق المستهدفات).
+> **🥇 حاز هذا المشروع على لقب أفضل مشروع في دفعة 2026**
 
-Geographic Insights: Regional sales distribution across Egyptian cities (Alexandria, Assiut, Aswan, etc.).
-(رؤى جغرافية: توزيع المبيعات الإقليمية عبر المدن المصرية (الإسكندرية، أسيوط، أسوان، إلخ)).
+**[🔗 رابط المشروع على GitHub](https://github.com/abdullahw8080/Household-Sales-Analysis-Forecasting)**
 
-🛠️ Tech Stack & Tools | التقنيات والأدوات المستخدمة
-Database: MySQL (Data Storage & Extraction).
+</div>
 
-Analysis & Programming: Python 3.x.
+---
 
-Libraries:
+## 📌 نظرة عامة
 
-Pandas & NumPy: Data manipulation & cleaning.
+يقدم هذا المشروع تحليلاً استراتيجياً متكاملاً **(End-to-End)** لأداء مبيعات شركة مستلزمات منزلية مصرية، يربط بين قواعد البيانات العلائقية، لوحات المؤشرات التفاعلية، والذكاء الاصطناعي للتنبؤ بالاتجاهات المستقبلية.
 
-Matplotlib & Seaborn: Exploratory data analysis (EDA).
+### المشكلة التي يحلّها
 
-Statsmodels: Time-series forecasting.
+كانت الشركة تعاني من:
+- **غياب الرؤية الموحّدة** للمبيعات عبر الفروع والمناطق الجغرافية المختلفة.
+- **صعوبة تتبع أداء الموظفين** ومقارنته بالمستهدفات.
+- **عدم القدرة على التنبؤ بالطلب** مما أدى إلى نقص متكرر في المخزون لبعض الأصناف.
+- **اتخاذ قرارات التسعير** بشكل حدسي بدلاً من الاعتماد على البيانات.
 
-Visualization: Power BI (DAX, Interactive Dashboards).
+يقدم المشروع **حلاً شاملاً** يدمج تنظيف البيانات، التحليل البصري، وتوقعات المبيعات في منصة واحدة متكاملة.
 
-📁 Project Structure | هيكل المشروع
-SQL_Queries/: Scripts for data extraction and preparation.
+---
 
-Python_Notebooks/: Jupyter notebooks for data cleaning and AI forecasting.
+## 📊 نظرة عامة على البيانات
 
-PowerBI_Dashboards/: The .pbix file and screenshots.
+| المؤشر | القيمة |
+|---|---|
+| إجمالي عمليات البيع | **+2,616** عملية |
+| إجمالي الكميات المباعة | **5,247** قطعة |
+| إجمالي الإيرادات (صافي) | **33.80 مليون جنيه** |
+| إجمالي الإيرادات (إجمالي) | **35 مليون جنيه** |
+| إجمالي الخصومات الممنوحة | **1.59 مليون جنيه** |
+| متوسط قيمة الطلب | **12,918 جنيه** |
+| عدد العملاء | **40 عميل** |
+| عدد الفروع | **6 فروع** |
 
-Data/: Sample of the cleaned dataset.
+---
 
-📈 Key Findings & Results | أهم النتائج والمخرجات
-Total Revenue: 33.8 Million EGP (Jan 2023 - Aug 2025).
-(إجمالي الإيرادات: 33.8 مليون جنيه مصري).
+## 📈 نمو المبيعات السنوي
 
-Peak Performance: 2024 was the "Golden Year" with 15.77 Million EGP in sales.
-(ذروة الأداء: كان عام 2024 هو "العام الذهبي" بمبيعات بلغت 15.77 مليون جنيه).
+```
+2023  ▓▓▓░░░░░░░░░░░░░░░░░░░░░░░░░░░░░   5.35 مليون جنيه
+2024  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░░░░░░░░░░░  15.77 مليون جنيه  📈 +195% نمو
+2025  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░░░░░░░░░░  18.00 مليون جنيه  📈 +14% نمو
+2026  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░░░░░░░░░░░░  17.44 مليون جنيه  🔮 توقع
+```
 
-Strategic Driver: Unit Price is the primary purchase influencer (74% impact).
-(المحرك الاستراتيجي: سعر الوحدة هو المؤثر الأول على قرار الشراء بنسبة 74%).
+> **🔥 نقطة تحول:** شهد عام 2024 قفزة استثنائية بنسبة **+195%** مقارنةً بعام 2023، ليتحول إلى عام الذروة في تاريخ الشركة.
 
-2026 Forecast: Anticipated revenue of 17.4 Million EGP with high demand for smart TVs and steam irons.
-(توقعات 2026: إيرادات متوقعة بقيمة 17.4 مليون جنيه مع طلب مرتفع على الشاشات الذكية والمكاوي البخارية).
+---
 
-🖼️ Dashboard Preview | معاينة لوحة التحكم
-👤 Author | إعداد
-Abdullah Mohammed Al-Sharif
+## 🚀 المميزات التقنية للمشروع
 
-Technical Specialist & Data Analyst.
+### 1. 🗄️ استخراج وتنظيف البيانات — MySQL
 
-Information Systems Student at USTY.
+- ربط أكثر من **5 جداول علائقية** عبر استعلامات `JOIN` معقدة.
+- معالجة القيم المفقودة والمكررة لضمان **دقة 100%** في البيانات المالية.
+- بناء استعلامات تجميعية (Aggregations) لحساب المؤشرات الرئيسية (KPIs).
+- تصدير البيانات المنظّفة لاستخدامها في Power BI وPython.
 
-LinkedIn Profile
+### 2. 📊 التحليل البصري التفاعلي — Power BI & DAX
 
-📄 License | الترخيص
-This project is licensed under the MIT License.
-(هذا المشروع مرخص بموجب رخصة MIT).
+تصميم **6 صفحات تفاعلية** تحتوي على أكثر من **20 رسماً بيانياً**:
+
+| الصفحة | المحتوى |
+|---|---|
+| **Overview** | مؤشرات الأداء الرئيسية، المبيعات الشهرية، توزيع الفروع |
+| **Sales 1** | تحليل المبيعات حسب السنة والشهر، متوسط قيمة الطلب |
+| **Sales 2** | تحليل العملاء الجغرافي، طرق الدفع، المبيعات الفصلية |
+| **Products** | تحليل المنتجات حسب الكمية والفئة والربحية |
+| **Customers** | تصنيف العملاء، أفضل 10 عملاء، سلوك الشراء |
+| **Employees** | أداء الموظفين، المستهدفات مقابل الفعلي |
+
+### 3. 🤖 التنبؤ الذكي — Python (Holt-Winters)
+
+- نموذج **Holt-Winters** للتحليل الزمني الموسمي.
+- **دقة النموذج: 93%** (MAPE = 7%)
+- التنبؤ بالمبيعات الشهرية لعام 2026 بإجمالي **17.44 مليون جنيه**.
+- التنبؤ بأعلى 10 منتجات مبيعاً كمياً لعام 2026.
+
+---
+
+## 💡 أبرز النتائج والرؤى (AI Insights)
+
+### 🔑 محركات البيع
+
+كشف تحليل الذكاء الاصطناعي (Feature Importance) عن:
+
+| العامل | نسبة التأثير |
+|---|---|
+| **سعر الوحدة** | **74%** — المؤثر الأكبر على قرار الشراء |
+| **الكمية** | **24%** |
+| نسبة الخصم | ~1% |
+| كود الفرع | <1% |
+| طريقة الدفع | <1% |
+
+> **💡 الاستنتاج الاستراتيجي:** سعر الوحدة يتحكم في **74% من قرار الشراء**، مما يوجّه الشركة نحو استراتيجيات تسعير تنافسية ذكية بدلاً من الاعتماد على الخصومات.
+
+### 🏪 أداء الفروع
+
+| الفرع | المبيعات | النسبة |
+|---|---|---|
+| **الإسكندرية** | 8.63M | 25.5% 🥇 |
+| أسيوط | 6.37M | 18.9% |
+| طنطا | 6.02M | 17.8% |
+| الفرع الرئيسي (القاهرة) | 6.0M | — |
+| المنيا | 4.5M | — |
+
+### 🛍️ أعلى المنتجات مبيعاً (القيمة)
+
+| المنتج | المبيعات |
+|---|---|
+| ثلاجة 21 قدم | 3.7M جنيه |
+| تلفزيون ذكي 55 بوصة | 3.2M جنيه |
+| ثلاجة 18 قدم | 3.1M جنيه |
+| مكيف هواء 3 حصان | 2.8M جنيه |
+
+### 👥 أداء العملاء
+
+- **أعلى عميل إيراداً:** عادل أحمد محمد — **1.21 مليون جنيه**
+- **توزيع العملاء:** شركات 37.5% | تجار 32.5% | أفراد 30%
+- **أعلى كثافة طلب جغرافياً:** أسوان (412 طلب)، البحيرة (265)، المنيا (241)
+
+### 🧑‍💼 أداء الموظفين
+
+- **أفضل موظف:** يوسف صالح محمد — **2.47 مليون جنيه** مبيعات
+- **متوسط الإنجاز مقابل الهدف:** **1,689.80%** (تجاوز المستهدف بفارق كبير)
+
+---
+
+## 🔮 التنبؤات المستقبلية 2026
+
+### توقعات المبيعات الشهرية
+
+| الشهر | التوقع (جنيه) |
+|---|---|
+| يناير | 1,289,056 |
+| فبراير | 1,448,072 |
+| مارس (ذروة Q1) | 1,501,221 |
+| أبريل | 1,514,123 |
+| مايو | 1,494,743 |
+| يونيو | 1,483,032 |
+| يوليو | 1,369,871 |
+| أغسطس | 1,419,822 |
+| سبتمبر | 1,381,292 |
+| أكتوبر | 1,377,080 |
+| نوفمبر (ذروة Q4) | 1,536,096 |
+| ديسمبر | 1,589,245 |
+| **الإجمالي** | **17,414,522** |
+
+### أعلى 10 منتجات متوقع بيعها كمياً في 2026
+
+| المنتج | الكمية المتوقعة |
+|---|---|
+| مكواة بخار | **211** وحدة |
+| تلفزيون ذكي 55 بوصة | 193 |
+| خلاط كهربائي | 183 |
+| مايكروويف 32 لتر | 177 |
+| تلفزيون ذكي 43 بوصة | 164 |
+| ثلاجة 21 قدم | 163 |
+| سخان غاز 10 لتر | 162 |
+| مروحة عامود | 160 |
+| ثلاجة 14 قدم | 157 |
+| سخان كهرباء 50 لتر | 156 |
+
+---
+
+## 🛠️ التقنيات المستخدمة
+
+```
+┌─────────────────────────────────────────────────┐
+│                  Tech Stack                      │
+│                                                 │
+│  🗄️  MySQL 8.0     →  Data Engineering          │
+│  📊  Power BI      →  Business Intelligence     │
+│  📐  DAX           →  KPIs & Calculations       │
+│  🐍  Python 3.10+  →  ML & Forecasting          │
+│  🧮  Pandas        →  Data Manipulation         │
+│  📈  Statsmodels   →  Time Series (Holt-Winters)│
+│  📉  Matplotlib    →  Data Visualization        │
+└─────────────────────────────────────────────────┘
+```
+
+---
+
+## 📁 هيكل المشروع
+
+```
+Household-Sales-Analysis-Forecasting/
+│
+├── 📂 SQL/
+│   ├── data_cleaning.sql
+│   ├── kpi_queries.sql
+│   └── joins_aggregations.sql
+│
+├── 📂 PowerBI/
+│   ├── Dashboard_Sales.pbix
+│   └── screenshots/
+│
+├── 📂 Python/
+│   ├── forecasting_model.py       # Holt-Winters Model (دقة 93%)
+│   ├── feature_importance.py      # AI Insights
+│   └── visualizations.py
+│
+├── 📂 Data/
+│   └── sales_data_cleaned.csv
+│
+└── README.md
+```
+
+---
+
+## 📌 المهارات التي يبرزها المشروع
+
+| المجال | المهارة |
+|---|---|
+| 📊 ذكاء الأعمال | Business Intelligence & Dashboarding |
+| 🔬 علم البيانات | Data Science & Statistical Modeling |
+| 🤖 الذكاء الاصطناعي | AI-driven Insights & Forecasting |
+| 🗄️ قواعد البيانات | Database Management & SQL Engineering |
+| 💰 التحليل المالي | Financial Forecasting & KPI Design |
+| 📍 التحليل الجغرافي | Geospatial Sales Analysis |
+| 🎯 اتخاذ القرار | Data-Driven Decision Making |
+
+---
+
+## 👤 صاحب المشروع
+
+<div align="center">
+
+**Abdullah W.**
+📧 [GitHub](https://github.com/abdullahw8080/Household-Sales-Analysis-Forecasting)
+
+🏆 **أفضل مشروع — دفعة 2026**
+
+*"البيانات ليست مجرد أرقام — هي قصص تنتظر من يرويها."*
+
+</div>
+
+---
+
+<div align="center">
+
+⭐ إذا أعجبك المشروع، لا تنسَ إعطاءه نجمة على GitHub!
+
+</div>
